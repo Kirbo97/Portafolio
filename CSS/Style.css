@@ -2,52 +2,20 @@
 /*  Diseños para Moviles  */
 /* ********************** */
 
+/*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (426 x 780), sin es linea el tamaño para Movil es (980 x 780)*/
+
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:980px){
     h1 { font-size: 2.18em !important; }
     header{ height: 3.18em !important; }
 
-    li.gustos { 
-        margin: 4px 0 4px 0 !important;
-        text-align: left !important;
-    }
-
-    details.esp { width: 409.6px !important;}
-
-    th.hora { width: 70px !important; }
-    
-    ul.sep2 { 
-        padding: 0 0 0 40px !important;
-        margin: 0 !important;
-    }
-    
-    ul.sep3 { 
-        padding: 0 4px 0 40px !important;
-        margin: 0 !important;
-    }
+    .hiper:-webkit-any-link {font-size: 1.83em !important; }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:600px) and (orientation:landscape){    
     h1 { font-size: 2.18em !important; }
     header{ height: 3.18em !important; }
-
-    li.gustos { 
-        margin: 4px 0 4px 0 !important;
-        text-align: left !important;
-    }
-    
-    details.esp { width: 409.6px !important;}
-
-    ul.sep2 { 
-        padding: 0 0 0 40px !important;
-        margin: 0 !important;
-    }
-    
-    ul.sep3 { 
-        padding: 0 4px 0 40px !important;
-        margin: 0 !important;
-    }
 }
 
 /* ******************* */
@@ -75,13 +43,6 @@ header{
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
 }
 
-/* creo la clase "icono" en la etiqueta HEADER para que tendra cierta carasteristica */
-header .icono {
-    position: absolute;
-    width: 38px; /* ajusto el ancho que tendra esta clase */
-    height: 38px; /* ajusto el alto que tendra esta clase */
-}
-
 /* La etiqueta "p" tendra cierta carasteristica */
 p { text-align: justify; }
 
@@ -94,7 +55,6 @@ p { text-align: justify; }
 
 /* clase "hiper" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
 .hiper:-webkit-any-link {
-    
 	color: #E83;
     font-family: 'Fantasy', sans-serif;
     font-size: 2em;
@@ -175,24 +135,6 @@ ul {
     list-style:none;
     line-height: 1.5em;
     margin-left: -.5em;
-}
-
-/* se crea la clase "sep1" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
-ul.sep1 { 
-    padding: 0 0 0 10px;
-    margin: 0;
-}
-
-/* se crea la clase "sep2" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
-ul.sep2 { 
-    padding: 0 0 0 100px;
-    margin: 0;
-}
-
-/* se crea la clase "sep3" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
-ul.sep3 { 
-    padding: 0 4px 0 100px;
-    margin: 0;
 }
 
 /* se crea la clase "horario" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
