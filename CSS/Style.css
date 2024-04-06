@@ -82,12 +82,6 @@ header .icono {
     height: 38px; /* ajusto el alto que tendra esta clase */
 }
 
-/* se crea caracteristicas para la etiqueta "b" para que sirva como negrilla*/
-b {
-    color: #369;
-    font-weight:800;
-}
-
 /* La etiqueta "p" tendra cierta carasteristica */
 p { text-align: justify; }
 
@@ -100,7 +94,8 @@ p { text-align: justify; }
 
 /* clase "hiper" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
 .hiper:-webkit-any-link {
-    color: #09F;
+    
+	color: #E83;
     font-family: 'Fantasy', sans-serif;
     font-size: 2em;
     letter-spacing: 0.1em;
@@ -108,10 +103,8 @@ p { text-align: justify; }
     text-decoration: none;
 }
 
-section { margin: 22px 0; }
+section.op { margin: 22px 0; }
 
-
-  
 /* esta ID evita que el borde golpee debajo de objetos flotantes */
 #content {
     background-color: rgba(255,255,255,.95);
@@ -148,29 +141,6 @@ h2 {
     letter-spacing: 0.1em;
     line-height: 1.4em;
     margin: 26.56px 0 0 0;
-}
-
-/* evitar que los titulos se expandan fuera del contenido */
-h3 , summary {
-	border-bottom:none;
-    font-weight: bold;
-	color: #E83;
-	font-family: 'Ranchers', sans-serif;
-	font-size: 1.5em;
-	letter-spacing: 0.1em;
-	line-height: 1em;
-    margin: 24px 0;
-}
-
-.pirn{ color: rgb(217, 0, 255); }
-
-details.esp { width: 666.8px;} 
-
-summary:focus-visible { outline:none; }
-
-details[open] > summary:first-of-type {
-    list-style-type: disclosure-open;
-	color: rgb(77, 208, 6);
 }
 
 /* se crea la clase "right" para que se ocupe de posisionar la imagen a la derecha*/
@@ -252,89 +222,13 @@ li.gustos {
     text-align: left;
 }
 
-/* La etiqueta "data" tendra una caracteristica para desplasar las tablas al centro */
-.data{ margin:15px auto;}
-
-/* Las etiquetas "td" (columna simple de la tabla) y "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño de las lineas de la tabla */
-td, th { 
-    padding: 4px 5px; /*(arriba, derecha, abajo y izquierda)*/
-    border:2px solid #00aa25;
-}
-
-td.perso{ padding: 8px 4px 8px 18px; }
-
-/* La etiqueta "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño del encabesado de la tabla */
-th { 
-    background-color:#00AA88; 
-    border-top:3px solid #228877; 
-    border-bottom:3px solid #228877;
-    border-left:3px solid #228877;
-    border-right:3px solid #228877; 
-    color: #FAFAFA
-}
-
-/* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(odd)" (filas impares) tendra un color en la tabla */
-tr:nth-child(odd) {background-color: #E8E8E8;}
-
-/* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(even)" (filas pares) tendra un color en la tabla */
-tr:nth-child(even) {background-color: #FAFAFA;}
-
-/* se crea la ID "boxsort" para que se ocupe de posisionar la imagen dentro de la caja*/
-#boxsort{ text-align:center;}
-
-/* se crea la clase "box_marriage" para que se ocupe de posisionar el contenido para los perfiles*/
-.box_marriage {
-    max-width:180px; 
-    height:auto; 
-    display:inline-block; 
-    margin:10px;
-}
-
-/* La etiqueta "img" con la clase "box_marriage" para que se ocupe del tamaño de la imagen*/
-.box_marriage img { max-width:100%; height:auto; }
-
-/* se crea la clase "box_gallinero" para que se ocupe de posisionar el contenido de las gallinas*/
-.box_gallinero {
-    max-width:200px; 
-    height:auto; 
-    display:inline-block; 
-    margin:10px;
-}
-
-/* se crea la clase "box_inicio" para que se ocupe de posisionar el contenido de las opciones*/
-.box_inicio {
-    max-width:160px; 
-    height:auto; 
-    display:inline-block; 
-    margin:17px 17px;
-}
-
-/* La etiqueta "img" con la clase "box_inicio" para que se ocupe del tamaño de la imagen*/
-.box_inicio img { max-width:100%; height:auto; }
-
-/* se crea la clase "box_mascota" para que se ocupe de posisionar el contenido para las mascotas*/
-.box_mascota {
-    max-width:200px; 
-    height:auto; 
-    display:inline-block; 
-    margin:10px 17px;
-}
-
-/* se crea la clase "box_ganado" para que se ocupe de posisionar el contenido para el ganado*/
-.box_ganado {
-    max-width: 270px; 
-    height:auto; 
-    display:inline-block; 
-    margin:10px;
-}
-
 /* ************** */
 /*  FINAL CUADRO  */
 /* ************** */
 
 /* defino que solo la etiqueta "footer" tendra tendra ciertas caracteristicas */
 footer {
-    border-top:4px solid #E83;
+    border-top:4px solid #093;
     width: 100%;  /* ajusto el tamaño que tendra esta clase */
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
