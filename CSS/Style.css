@@ -8,7 +8,6 @@
 @media screen and (max-width:980px){
     h1 { font-size: 2.18em !important; }
     header{ height: 3.18em !important; }
-
     .hiper:-webkit-any-link {font-size: 1.75em !important; }
 }
 
@@ -28,11 +27,7 @@ html {
     font-size:100%;
     margin:0px; 
     padding:0px; 
-}
-
-/* La etiqueta "body" tendra cierta carasteristica */
-body {
-    background: url('../IMG/fondo.jpg') repeat; 
+    background: url('../IMG/fondo.jpg')  repeat;
     background-attachment: fixed;
 }
 
