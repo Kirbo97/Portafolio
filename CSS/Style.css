@@ -5,7 +5,7 @@
 /*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (426 x 780), sin es linea el tamaño para Movil es (980 x 780)*/
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:426px){
+@media screen and (max-width:980px){
     h1 { font-size: 2.18em !important; }
     header{ height: 3.18em !important; }
 
@@ -16,6 +16,7 @@
 @media screen and (max-height:600px) and (orientation:landscape){    
     h1 { font-size: 2.18em !important; }
     header{ height: 3.18em !important; }
+	
     .hiper:-webkit-any-link {font-size: 1.80em !important; }
 }
 
