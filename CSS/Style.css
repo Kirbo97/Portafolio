@@ -38,26 +38,17 @@ body {
 
 /* La etiqueta "header" tendra cierta carasteristica */
 header{
-    border-bottom:2px solid #00AA88;  
+    border-bottom:4px solid #09F; 
     height: 3.5em;
-    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
-    flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
 }
 
 /* La etiqueta "p" tendra cierta carasteristica */
 p { text-align: justify; }
 
-/* clase "link" con propiedad de enlace y le quito la aparienci de hiperbinculo */
-.link:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none;
-}
-
 /* clase "hiper" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
 .hiper:-webkit-any-link {
-	color: #E83;
-    font-family: 'Fantasy', sans-serif;
+	color: rgb(27, 115, 246);
+    font-family: 'Ranchers';
     font-size: 2em;
     letter-spacing: 0.1em;
     line-height: 1.4em;
@@ -68,9 +59,7 @@ section.op { margin: 22px 0; }
 
 /* esta ID evita que el borde golpee debajo de objetos flotantes */
 #content {
-    background-color: rgba(255,255,255,.95);
-    border: 3px solid #228877;
-    box-shadow: 0px 0px 0px 6px #FFF; 
+    background-color: rgba(233, 253, 249, 0.95);
     border-radius:20px;
     box-sizing:border-box;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -85,8 +74,9 @@ section.op { margin: 22px 0; }
 
 /* evitar que los titulos se expandan fuera del contenido */
 h1 {
-    color: #093;
+    color: rgb(0, 82, 153);
     font-family: 'Ranchers';
+    text-align: center;
     font-size: 2.5em;
     letter-spacing: 0.1em;
     line-height:1em;
@@ -95,7 +85,7 @@ h1 {
 
 /* evitar que los titulos se expandan fuera del contenido */
 h2 {
-    border-bottom: 2px solid #09F;
+    border-bottom: 4px solid #09F;
     color: #09F;
     font-family: 'Ranchers';
     font-size: 2em;
@@ -105,25 +95,13 @@ h2 {
 }
 
 /* se crea la clase "right" para que se ocupe de posisionar la imagen a la derecha*/
-.right {
+.screenshot {
     float:right; 
     height:auto; 
     margin: 5px 0 0 20px;
     max-width:100%; /* stop floats from expanding outside of content */	
     border-radius:10px;
-}
 
-/* se crea la clase "center" para que se ocupe de posisionar la imagen al centro*/
-.center {
-    display:block;
-    height:auto;
-    margin:0px auto;
-    max-width:100%;
-    border-radius:10px;
-}
-
-/* se crea la clase "screenshot" para que se ocupe de crear un marco cverde para la imagen*/
-.screenshot {
     border: 3px solid #228877;
     border-radius:15px; 
     max-width:100%; 	
@@ -146,8 +124,7 @@ ul.horario {
 
 /* La etiqueta li con propiedad "before" (Antes) tendra un especie de gion */
 ul li:before {
-    content: '\00273F'; /* La guion sera una flor */
-    color: #093; /* El guion sera de color verde*/
+    content: '\1F4BD'; /* La guion sera una flor */
     padding-right:8px; /* El guion tendra un espacio para la derecha*/
     font-size:1.2em; /* El guion tendra un tamaño*/
 }
@@ -156,13 +133,8 @@ ul li:before {
 li { 
     margin-block-end: 0.5em; 
     margin-right: 0.5em;
-    text-align: justify;
-    margin: 8px 0 8px 8px;
-}
-
-li.gustos { 
-    margin: 4px 0 4px 0;
     text-align: left;
+    margin: 8px 0 8px 4px;
 }
 
 /* ************** */
@@ -171,7 +143,7 @@ li.gustos {
 
 /* defino que solo la etiqueta "footer" tendra tendra ciertas caracteristicas */
 footer {
-    border-top:4px solid #093;
+    border-top:4px solid #09F;
     width: 100%;  /* ajusto el tamaño que tendra esta clase */
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
