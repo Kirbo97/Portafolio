@@ -65,6 +65,7 @@ section.op { margin: 22px 0; }
     overflow:hidden; 
     padding: 20px;
     z-index:0;
+    /*overflow-y: scroll;*/
 }
 
 /* evitar que los titulos se expandan fuera del contenido */
@@ -91,11 +92,6 @@ h2 {
 
 /* se crea la clase "right" para que se ocupe de posisionar la imagen a la derecha*/
 .screenshot {
-    float:right; 
-    height:auto; 
-    max-width:100%; /* stop floats from expanding outside of content */	
-    border-radius:10px;
-
     border: 3px solid #09F;
     border-radius:15px; 
     max-width:100%; 	
@@ -130,6 +126,19 @@ li {
     text-align: left;
     margin: 8px 0 8px 4px;
 }
+
+#boxsort{ text-align:center;}
+
+/* se crea la clase "box_inicio" para que se ocupe de posisionar el contenido de las opciones*/
+.box_inicio {
+    max-width:500px; 
+    height:auto; 
+    display:inline-block; 
+    margin:20px 60px;
+}
+
+/* La etiqueta "img" con la clase "box_inicio" para que se ocupe del tamaño de la imagen*/
+.box_inicio img { max-width:100%; height:auto; }
 
 /* ************** */
 /*  FINAL CUADRO  */
