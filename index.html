@@ -4,11 +4,18 @@
     <head>
         <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
         <title>Menu de proyectos</title> 
-        <link rel="stylesheet" href="./CSS/Style.css" type="text/css" />
+        <link rel="stylesheet" href="./CSS/Style.css" type="text/css"/>
+        <link rel="stylesheet" href="./CSS/Pantalla_carga.css" type="text/css"/>
         <link rel="shortcut icon" href="./IMG/Portafolio.ico"/>
     </head>
     
     <body>
+        <!-- Pantalla de carga -->
+        <div id="loading-screen">
+            <div class="loader"></div>
+            <p>Cargando...</p>
+        </div>
+
         <div id="content">
             
             <header> <h1>Fabian Daquilema</h1> </header>
@@ -52,6 +59,13 @@
                 </section>
             </footer>
 
-        </div>    
+        </div>
+
+        <!-- Ocultar la pantalla de carga cuando termine de cargar la página -->
+        <script>
+            window.addEventListener("load", function () {
+                document.getElementById("loading-screen").style.display = "none";
+            });
+        </script>
     </body>
 </html>
