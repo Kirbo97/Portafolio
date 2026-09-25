@@ -1,9 +1,9 @@
-async function loadHTML(id, file) { 
-    const response = await fetch(file); 
+async function loadHTML(id, file) {
+    const response = await fetch(file);
     if (!response.ok) { throw new Error("No se pudo cargar: " + file); }
-    const data = await response.text(); 
-    document.getElementById(id).innerHTML = data; 
-} 
+    const data = await response.text();
+    document.getElementById(id).innerHTML = data;
+}
 
 async function cargarAnimacion() {
     const imagen = new Image();
@@ -24,11 +24,6 @@ async function cargarPagina() {
     await loadHTML("loading", "/Portafolio/Estructura/carga.html");
 
     await cargarAnimacion();
-
-    await Promise.all([
-        loadHTML("nav", "/Portafolio/Estructura/nav.html"),
-        loadHTML("footer", "/Portafolio/Estructura/footer.html")
-    ]);
 
     const imagenes = document.images;
 
