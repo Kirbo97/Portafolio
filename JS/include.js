@@ -1,14 +1,34 @@
 async function loadHTML(id, file) { 
     const response = await fetch(file); 
+    if (!response.ok) { throw new Error("No se pudo cargar: " + file); }
     const data = await response.text(); 
     document.getElementById(id).innerHTML = data; 
 } 
 
+async function cargarAnimacion() {
+    const imagen = new Image();
+    imagen.src = "/Portafolio/IMG/Carga.png";
+
+    imagen.onload = function () {
+        document.getElementById("loading-animation").innerHTML = '<img src="/Portafolio/IMG/Carga.png" alt="Cargando..." class="loading-image">';
+    };
+
+    imagen.onerror = function () {
+        document.getElementById("loading-animation").innerHTML = '<div class="loader"></div>';
+    };
+}
 
 async function cargarPagina() {
     document.body.style.overflow = "hidden";
 
     await loadHTML("loading", "/Portafolio/Estructura/carga.html");
+
+    await cargarAnimacion();
+
+    await Promise.all([
+        loadHTML("nav", "/Portafolio/Estructura/nav.html"),
+        loadHTML("footer", "/Portafolio/Estructura/footer.html")
+    ]);
 
     const imagenes = document.images;
 
