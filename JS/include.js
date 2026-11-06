@@ -1,3 +1,8 @@
+// Evitar que el navegador restaure la posición anterior 
+if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+}
+
 async function loadHTML(id, file) {
     const response = await fetch(file);
     if (!response.ok) { throw new Error("No se pudo cargar: " + file); }
@@ -42,6 +47,9 @@ async function cargarPagina() {
             });
         })
     );
+
+    // Regresar al inicio de la página
+    window.scrollTo(0, 0);
 
     document.getElementById("loading").style.display = "none";
     document.body.style.overflow = "";
